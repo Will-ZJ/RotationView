@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEF20E441FF4913400578899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E431FF4913400578899 /* main.m */; };
+		BEF20E471FF4913400578899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E461FF4913400578899 /* AppDelegate.m */; };
+		BEF20E4A1FF4913400578899 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E491FF4913400578899 /* ViewController.m */; };
+		BEF20E4D1FF4913400578899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF20E4B1FF4913400578899 /* Main.storyboard */; };
+		BEF20E4F1FF4913400578899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF20E4E1FF4913400578899 /* Assets.xcassets */; };
+		BEF20E521FF4913400578899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF20E501FF4913400578899 /* LaunchScreen.storyboard */; };
+		BEF20E5D1FF4913500578899 /* RotationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E5C1FF4913500578899 /* RotationViewTests.m */; };
+		BEF20E681FF4913500578899 /* RotationViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E671FF4913500578899 /* RotationViewUITests.m */; };
+		BEF20E7C1FF491FA00578899 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E771FF491FA00578899 /* BaseNavigationController.m */; };
+		BEF20E7D1FF491FA00578899 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E791FF491FA00578899 /* BaseTabBarController.m */; };
+		BEF20E7E1FF491FA00578899 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E7B1FF491FA00578899 /* BaseViewController.m */; };
+		BEF20E811FF4926800578899 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E801FF4926800578899 /* UIColor+HEX.m */; };
+		BEF20E841FF4930000578899 /* RealTimeProtectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E831FF4930000578899 /* RealTimeProtectionVC.m */; };
+		BEF20E871FF493F700578899 /* AlarmLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E861FF493F700578899 /* AlarmLogVC.m */; };
+		BEF20E8E1FF495A900578899 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E8B1FF495A900578899 /* PlayerView.m */; };
+		BEF20E8F1FF495A900578899 /* ZJLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E8D1FF495A900578899 /* ZJLoading.m */; };
+		BEF20E951FF4963B00578899 /* UIView+ZJAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E941FF4963B00578899 /* UIView+ZJAdditions.m */; };
+		BEF20E9A1FF496B000578899 /* dropdownMenu_cornerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF20E971FF496B000578899 /* dropdownMenu_cornerIcon.png */; };
+		BEF20E9B1FF496B000578899 /* LMJDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF20E991FF496B000578899 /* LMJDropdownMenu.m */; };
+		BEF20E9E1FF4971300578899 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20E9D1FF4971300578899 /* IJKMediaFramework.framework */; };
+		BEF20EA11FF499D300578899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EA01FF499D300578899 /* AudioToolbox.framework */; };
+		BEF20EA31FF499E500578899 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EA21FF499E500578899 /* libbz2.tbd */; };
+		BEF20EA51FF499F800578899 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EA41FF499F800578899 /* libz.tbd */; };
+		BEF20EA71FF49A0D00578899 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EA61FF49A0D00578899 /* VideoToolbox.framework */; };
+		BEF20EA91FF49A4000578899 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EA81FF49A4000578899 /* MediaPlayer.framework */; };
+		BEF20EAB1FF49A4A00578899 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EAA1FF49A4A00578899 /* AVFoundation.framework */; };
+		BEF20EAD1FF49A5600578899 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EAC1FF49A5600578899 /* CoreGraphics.framework */; };
+		BEF20EAF1FF49A6400578899 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EAE1FF49A6400578899 /* CoreMedia.framework */; };
+		BEF20EB11FF49A8200578899 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EB01FF49A8200578899 /* CoreVideo.framework */; };
+		BEF20EB31FF49A9700578899 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EB21FF49A9700578899 /* OpenGLES.framework */; };
+		BEF20EB51FF49AA000578899 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF20EB41FF49AA000578899 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEF20E591FF4913500578899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF20E371FF4913400578899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF20E3E1FF4913400578899;
+			remoteInfo = RotationView;
+		};
+		BEF20E641FF4913500578899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEF20E371FF4913400578899 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF20E3E1FF4913400578899;
+			remoteInfo = RotationView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEF20E3F1FF4913400578899 /* RotationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF20E431FF4913400578899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEF20E451FF4913400578899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEF20E461FF4913400578899 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEF20E481FF4913400578899 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEF20E491FF4913400578899 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEF20E4C1FF4913400578899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEF20E4E1FF4913400578899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEF20E511FF4913400578899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEF20E531FF4913400578899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF20E581FF4913500578899 /* RotationViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotationViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF20E5C1FF4913500578899 /* RotationViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationViewTests.m; sourceTree = "<group>"; };
+		BEF20E5E1FF4913500578899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF20E631FF4913500578899 /* RotationViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RotationViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF20E671FF4913500578899 /* RotationViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotationViewUITests.m; sourceTree = "<group>"; };
+		BEF20E691FF4913500578899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF20E761FF491FA00578899 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		BEF20E771FF491FA00578899 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		BEF20E781FF491FA00578899 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		BEF20E791FF491FA00578899 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		BEF20E7A1FF491FA00578899 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		BEF20E7B1FF491FA00578899 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		BEF20E7F1FF4926800578899 /* UIColor+HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
+		BEF20E801FF4926800578899 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		BEF20E821FF4930000578899 /* RealTimeProtectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeProtectionVC.h; sourceTree = "<group>"; };
+		BEF20E831FF4930000578899 /* RealTimeProtectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealTimeProtectionVC.m; sourceTree = "<group>"; };
+		BEF20E851FF493F700578899 /* AlarmLogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmLogVC.h; sourceTree = "<group>"; };
+		BEF20E861FF493F700578899 /* AlarmLogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmLogVC.m; sourceTree = "<group>"; };
+		BEF20E881FF4944F00578899 /* PAZCLDefineTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAZCLDefineTool.h; sourceTree = "<group>"; };
+		BEF20E8A1FF495A900578899 /* PlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		BEF20E8B1FF495A900578899 /* PlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		BEF20E8C1FF495A900578899 /* ZJLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLoading.h; sourceTree = "<group>"; };
+		BEF20E8D1FF495A900578899 /* ZJLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLoading.m; sourceTree = "<group>"; };
+		BEF20E931FF4963A00578899 /* UIView+ZJAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZJAdditions.h"; sourceTree = "<group>"; };
+		BEF20E941FF4963B00578899 /* UIView+ZJAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZJAdditions.m"; sourceTree = "<group>"; };
+		BEF20E971FF496B000578899 /* dropdownMenu_cornerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdownMenu_cornerIcon.png; sourceTree = "<group>"; };
+		BEF20E981FF496B000578899 /* LMJDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMJDropdownMenu.h; sourceTree = "<group>"; };
+		BEF20E991FF496B000578899 /* LMJDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMJDropdownMenu.m; sourceTree = "<group>"; };
+		BEF20E9D1FF4971300578899 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		BEF20EA01FF499D300578899 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BEF20EA21FF499E500578899 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		BEF20EA41FF499F800578899 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BEF20EA61FF49A0D00578899 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		BEF20EA81FF49A4000578899 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		BEF20EAA1FF49A4A00578899 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BEF20EAC1FF49A5600578899 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BEF20EAE1FF49A6400578899 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BEF20EB01FF49A8200578899 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BEF20EB21FF49A9700578899 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BEF20EB41FF49AA000578899 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEF20E3C1FF4913400578899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF20EB51FF49AA000578899 /* QuartzCore.framework in Frameworks */,
+				BEF20EB31FF49A9700578899 /* OpenGLES.framework in Frameworks */,
+				BEF20EB11FF49A8200578899 /* CoreVideo.framework in Frameworks */,
+				BEF20EAF1FF49A6400578899 /* CoreMedia.framework in Frameworks */,
+				BEF20EAD1FF49A5600578899 /* CoreGraphics.framework in Frameworks */,
+				BEF20EAB1FF49A4A00578899 /* AVFoundation.framework in Frameworks */,
+				BEF20EA91FF49A4000578899 /* MediaPlayer.framework in Frameworks */,
+				BEF20EA71FF49A0D00578899 /* VideoToolbox.framework in Frameworks */,
+				BEF20EA51FF499F800578899 /* libz.tbd in Frameworks */,
+				BEF20EA31FF499E500578899 /* libbz2.tbd in Frameworks */,
+				BEF20EA11FF499D300578899 /* AudioToolbox.framework in Frameworks */,
+				BEF20E9E1FF4971300578899 /* IJKMediaFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF20E551FF4913500578899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF20E601FF4913500578899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEF20E361FF4913400578899 = {
+			isa = PBXGroup;
+			children = (
+				BEF20E411FF4913400578899 /* RotationView */,
+				BEF20E5B1FF4913500578899 /* RotationViewTests */,
+				BEF20E661FF4913500578899 /* RotationViewUITests */,
+				BEF20E401FF4913400578899 /* Products */,
+				BEF20E9F1FF499D300578899 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEF20E401FF4913400578899 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E3F1FF4913400578899 /* RotationView.app */,
+				BEF20E581FF4913500578899 /* RotationViewTests.xctest */,
+				BEF20E631FF4913500578899 /* RotationViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF20E411FF4913400578899 /* RotationView */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E451FF4913400578899 /* AppDelegate.h */,
+				BEF20E461FF4913400578899 /* AppDelegate.m */,
+				BEF20E481FF4913400578899 /* ViewController.h */,
+				BEF20E491FF4913400578899 /* ViewController.m */,
+				BEF20E7F1FF4926800578899 /* UIColor+HEX.h */,
+				BEF20E801FF4926800578899 /* UIColor+HEX.m */,
+				BEF20E821FF4930000578899 /* RealTimeProtectionVC.h */,
+				BEF20E831FF4930000578899 /* RealTimeProtectionVC.m */,
+				BEF20E881FF4944F00578899 /* PAZCLDefineTool.h */,
+				BEF20E851FF493F700578899 /* AlarmLogVC.h */,
+				BEF20E861FF493F700578899 /* AlarmLogVC.m */,
+				BEF20E931FF4963A00578899 /* UIView+ZJAdditions.h */,
+				BEF20E941FF4963B00578899 /* UIView+ZJAdditions.m */,
+				BEF20E961FF496B000578899 /* LMJDropdownMenu */,
+				BEF20E891FF495A900578899 /* Player */,
+				BEF20E751FF491FA00578899 /* Base */,
+				BEF20E4B1FF4913400578899 /* Main.storyboard */,
+				BEF20E4E1FF4913400578899 /* Assets.xcassets */,
+				BEF20E501FF4913400578899 /* LaunchScreen.storyboard */,
+				BEF20E531FF4913400578899 /* Info.plist */,
+				BEF20E421FF4913400578899 /* Supporting Files */,
+			);
+			path = RotationView;
+			sourceTree = "<group>";
+		};
+		BEF20E421FF4913400578899 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E431FF4913400578899 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEF20E5B1FF4913500578899 /* RotationViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E5C1FF4913500578899 /* RotationViewTests.m */,
+				BEF20E5E1FF4913500578899 /* Info.plist */,
+			);
+			path = RotationViewTests;
+			sourceTree = "<group>";
+		};
+		BEF20E661FF4913500578899 /* RotationViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E671FF4913500578899 /* RotationViewUITests.m */,
+				BEF20E691FF4913500578899 /* Info.plist */,
+			);
+			path = RotationViewUITests;
+			sourceTree = "<group>";
+		};
+		BEF20E751FF491FA00578899 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E761FF491FA00578899 /* BaseNavigationController.h */,
+				BEF20E771FF491FA00578899 /* BaseNavigationController.m */,
+				BEF20E781FF491FA00578899 /* BaseTabBarController.h */,
+				BEF20E791FF491FA00578899 /* BaseTabBarController.m */,
+				BEF20E7A1FF491FA00578899 /* BaseViewController.h */,
+				BEF20E7B1FF491FA00578899 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BEF20E891FF495A900578899 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E9C1FF4971300578899 /* IJK */,
+				BEF20E8A1FF495A900578899 /* PlayerView.h */,
+				BEF20E8B1FF495A900578899 /* PlayerView.m */,
+				BEF20E8C1FF495A900578899 /* ZJLoading.h */,
+				BEF20E8D1FF495A900578899 /* ZJLoading.m */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		BEF20E961FF496B000578899 /* LMJDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E971FF496B000578899 /* dropdownMenu_cornerIcon.png */,
+				BEF20E981FF496B000578899 /* LMJDropdownMenu.h */,
+				BEF20E991FF496B000578899 /* LMJDropdownMenu.m */,
+			);
+			path = LMJDropdownMenu;
+			sourceTree = "<group>";
+		};
+		BEF20E9C1FF4971300578899 /* IJK */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20E9D1FF4971300578899 /* IJKMediaFramework.framework */,
+			);
+			path = IJK;
+			sourceTree = "<group>";
+		};
+		BEF20E9F1FF499D300578899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEF20EB41FF49AA000578899 /* QuartzCore.framework */,
+				BEF20EB21FF49A9700578899 /* OpenGLES.framework */,
+				BEF20EB01FF49A8200578899 /* CoreVideo.framework */,
+				BEF20EAE1FF49A6400578899 /* CoreMedia.framework */,
+				BEF20EAC1FF49A5600578899 /* CoreGraphics.framework */,
+				BEF20EAA1FF49A4A00578899 /* AVFoundation.framework */,
+				BEF20EA81FF49A4000578899 /* MediaPlayer.framework */,
+				BEF20EA61FF49A0D00578899 /* VideoToolbox.framework */,
+				BEF20EA41FF499F800578899 /* libz.tbd */,
+				BEF20EA21FF499E500578899 /* libbz2.tbd */,
+				BEF20EA01FF499D300578899 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEF20E3E1FF4913400578899 /* RotationView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF20E6C1FF4913500578899 /* Build configuration list for PBXNativeTarget "RotationView" */;
+			buildPhases = (
+				BEF20E3B1FF4913400578899 /* Sources */,
+				BEF20E3C1FF4913400578899 /* Frameworks */,
+				BEF20E3D1FF4913400578899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RotationView;
+			productName = RotationView;
+			productReference = BEF20E3F1FF4913400578899 /* RotationView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEF20E571FF4913500578899 /* RotationViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF20E6F1FF4913500578899 /* Build configuration list for PBXNativeTarget "RotationViewTests" */;
+			buildPhases = (
+				BEF20E541FF4913500578899 /* Sources */,
+				BEF20E551FF4913500578899 /* Frameworks */,
+				BEF20E561FF4913500578899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEF20E5A1FF4913500578899 /* PBXTargetDependency */,
+			);
+			name = RotationViewTests;
+			productName = RotationViewTests;
+			productReference = BEF20E581FF4913500578899 /* RotationViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEF20E621FF4913500578899 /* RotationViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF20E721FF4913500578899 /* Build configuration list for PBXNativeTarget "RotationViewUITests" */;
+			buildPhases = (
+				BEF20E5F1FF4913500578899 /* Sources */,
+				BEF20E601FF4913500578899 /* Frameworks */,
+				BEF20E611FF4913500578899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEF20E651FF4913500578899 /* PBXTargetDependency */,
+			);
+			name = RotationViewUITests;
+			productName = RotationViewUITests;
+			productReference = BEF20E631FF4913500578899 /* RotationViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEF20E371FF4913400578899 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Will;
+				TargetAttributes = {
+					BEF20E3E1FF4913400578899 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = EHG66JPZFV;
+						ProvisioningStyle = Automatic;
+					};
+					BEF20E571FF4913500578899 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEF20E3E1FF4913400578899;
+					};
+					BEF20E621FF4913500578899 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BEF20E3E1FF4913400578899;
+					};
+				};
+			};
+			buildConfigurationList = BEF20E3A1FF4913400578899 /* Build configuration list for PBXProject "RotationView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEF20E361FF4913400578899;
+			productRefGroup = BEF20E401FF4913400578899 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEF20E3E1FF4913400578899 /* RotationView */,
+				BEF20E571FF4913500578899 /* RotationViewTests */,
+				BEF20E621FF4913500578899 /* RotationViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEF20E3D1FF4913400578899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF20E521FF4913400578899 /* LaunchScreen.storyboard in Resources */,
+				BEF20E9A1FF496B000578899 /* dropdownMenu_cornerIcon.png in Resources */,
+				BEF20E4F1FF4913400578899 /* Assets.xcassets in Resources */,
+				BEF20E4D1FF4913400578899 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF20E561FF4913500578899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF20E611FF4913500578899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEF20E3B1FF4913400578899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF20E7D1FF491FA00578899 /* BaseTabBarController.m in Sources */,
+				BEF20E9B1FF496B000578899 /* LMJDropdownMenu.m in Sources */,
+				BEF20E7E1FF491FA00578899 /* BaseViewController.m in Sources */,
+				BEF20E951FF4963B00578899 /* UIView+ZJAdditions.m in Sources */,
+				BEF20E7C1FF491FA00578899 /* BaseNavigationController.m in Sources */,
+				BEF20E811FF4926800578899 /* UIColor+HEX.m in Sources */,
+				BEF20E871FF493F700578899 /* AlarmLogVC.m in Sources */,
+				BEF20E841FF4930000578899 /* RealTimeProtectionVC.m in Sources */,
+				BEF20E4A1FF4913400578899 /* ViewController.m in Sources */,
+				BEF20E471FF4913400578899 /* AppDelegate.m in Sources */,
+				BEF20E8F1FF495A900578899 /* ZJLoading.m in Sources */,
+				BEF20E441FF4913400578899 /* main.m in Sources */,
+				BEF20E8E1FF495A900578899 /* PlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF20E541FF4913500578899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF20E5D1FF4913500578899 /* RotationViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEF20E5F1FF4913500578899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF20E681FF4913500578899 /* RotationViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEF20E5A1FF4913500578899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF20E3E1FF4913400578899 /* RotationView */;
+			targetProxy = BEF20E591FF4913500578899 /* PBXContainerItemProxy */;
+		};
+		BEF20E651FF4913500578899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEF20E3E1FF4913400578899 /* RotationView */;
+			targetProxy = BEF20E641FF4913500578899 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEF20E4B1FF4913400578899 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF20E4C1FF4913400578899 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEF20E501FF4913400578899 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEF20E511FF4913400578899 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEF20E6A1FF4913500578899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEF20E6B1FF4913500578899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEF20E6D1FF4913500578899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EHG66JPZFV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RotationView/Base/IJK",
+					"$(PROJECT_DIR)/RotationView/Player/IJK",
+				);
+				INFOPLIST_FILE = RotationView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WILL.RotationView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		BEF20E6E1FF4913500578899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = EHG66JPZFV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RotationView/Base/IJK",
+					"$(PROJECT_DIR)/RotationView/Player/IJK",
+				);
+				INFOPLIST_FILE = RotationView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WILL.RotationView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		BEF20E701FF4913500578899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RotationViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinganAI.WILL.RotationViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RotationView.app/RotationView";
+			};
+			name = Debug;
+		};
+		BEF20E711FF4913500578899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RotationViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinganAI.WILL.RotationViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RotationView.app/RotationView";
+			};
+			name = Release;
+		};
+		BEF20E731FF4913500578899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RotationViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinganAI.WILL.RotationViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RotationView;
+			};
+			name = Debug;
+		};
+		BEF20E741FF4913500578899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RotationViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinganAI.WILL.RotationViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RotationView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEF20E3A1FF4913400578899 /* Build configuration list for PBXProject "RotationView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF20E6A1FF4913500578899 /* Debug */,
+				BEF20E6B1FF4913500578899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF20E6C1FF4913500578899 /* Build configuration list for PBXNativeTarget "RotationView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF20E6D1FF4913500578899 /* Debug */,
+				BEF20E6E1FF4913500578899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEF20E6F1FF4913500578899 /* Build configuration list for PBXNativeTarget "RotationViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF20E701FF4913500578899 /* Debug */,
+				BEF20E711FF4913500578899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEF20E721FF4913500578899 /* Build configuration list for PBXNativeTarget "RotationViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEF20E731FF4913500578899 /* Debug */,
+				BEF20E741FF4913500578899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEF20E371FF4913400578899 /* Project object */;
+}
